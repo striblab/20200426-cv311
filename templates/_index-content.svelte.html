@@ -1,0 +1,29 @@
+<div id="wrapper">
+  <div class="slide" id="compare">
+    <div class="chartHead">Where social distancing complains in Minneapolis come from</div>
+      <div class="chatter">Since Gov. Tim Walz's shelter-in-place order at the end of March, dozens of <span class="legendary orange3">311 complaints</span> have been filed against people congregating in parks and onther places across the city.</div>
+
+      <div id="map"></div>
+      <p></p>
+      <div class="byline">Map: <a href="http://www.startribune.com/jeff-hargarten/274254381/" target="new_">Jeff Hargarten, Star Tribune</a> • Source: City of Minneapolis</div>
+
+  </div>
+</div>
+
+<script>
+  export default {
+    oncreate() {
+      // For content that lives in the CMS directly, we hack
+      // around the share bits by removing it before we load
+      // the component, then re-attach here.
+      //
+      // This looks like
+      // <div class="share-placeholder">
+      //   <!-- share -->
+      // </div>
+      if (this.get().attachShare) {
+        this.get().attachShare();
+      }
+    }
+  };
+</script>
