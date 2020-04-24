@@ -173,8 +173,8 @@ map.on('load', function() {
             'layout': {},
             'type': 'line',
             'paint': {
-              'line-width': 1,
-              'line-color': '#333333'
+              'line-width': 0.7,
+              'line-color': '#aaaaaa'
             }
         });
 
